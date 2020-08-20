@@ -88,3 +88,27 @@ body {
   color: red;
   font-weight: 700;
 }
+
+@media screen and (min-width: 600px) {
+  body {
+    background-image: url(../images/bg-intro-desktop.png);
+  }
+
+  #wrapper {
+    padding: 50px 50px;
+  }
+
+  #column-1 {
+    width: 50%;
+    float: left;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #column-2 {
+    width: 50%;
+    float: right;
+  }
+}
