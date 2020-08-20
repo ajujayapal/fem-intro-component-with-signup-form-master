@@ -1,42 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro component with sign up form</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Intro component with sign up form</title>
 
-  Learn to code by watching others
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-  but understanding how developers think is invaluable. 
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="wrapper">
+        <div id="column-1" class="column">
+          <h2>Learn to code by watching others</h2>
+          <p>
+            See how experienced developers solve problems in real-time. Watching
+            scripted tutorials is great, but understanding how developers think
+            is invaluable.
+          </p>
+        </div>
+        <div id="column-2" class="column">
+          <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+          <div class="form-container">
+            <form action="#">
+              <div class="field">
+                <input
+                  type="text"
+                  aria-label="First Name"
+                  placeholder="First Name"
+                />
+              </div>
+              <div class="field">
+                <input
+                  type="text"
+                  aria-label="Last Name"
+                  placeholder="Last Name"
+                />
+              </div>
+              <div class="field">
+                <input
+                  type="email"
+                  aria-label="Email Address"
+                  placeholder="Email Address"
+                />
+              </div>
+              <div class="field">
+                <input
+                  type="password"
+                  aria-label="Password"
+                  placeholder="Password"
+                />
+              </div>
 
-  Try it free 7 days then $20/mo. thereafter
+              <button>CLAIM YOUR FREE TRIAL</button>
+            </form>
+            <div class="tos">
+              <span>
+                By clicking the button, you are agreeing to our
+                <span> Terms and Services</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  First Name 
-  Last Name 
-  Email Address
-  Password
-
-  Claim your free trial 
-
-  By clicking the button, you are agreeing to our Terms and Services
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+    <!-- <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://jayapalan.com" target="_blank">Aju Jayapalan</a>.
+      </p>
+    </footer> -->
+  </body>
 </html>

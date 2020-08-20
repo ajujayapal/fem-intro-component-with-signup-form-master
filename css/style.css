@@ -1,0 +1,90 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/bg-intro-mobile.png);
+  background-color: hsl(0, 100%, 74%);
+  color: white;
+}
+
+#container {
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+#wrapper {
+  width: 100%;
+  padding: 50px 20px;
+  margin: 0 auto;
+}
+
+#column-1 {
+  text-align: center;
+  padding: 20px;
+}
+
+#column-1 p {
+  font-size: 0.9rem;
+}
+
+#column-2 p {
+  font-weight: 400;
+  text-align: center;
+  background-color: hsl(248, 32%, 49%);
+  padding: 20px 60px;
+  border-radius: 10px;
+}
+
+#column-2 p span {
+  font-weight: 700;
+}
+
+.form-container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.field input,
+.form-container button {
+  width: 100%;
+  padding: 18px 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.field input {
+  border: 1px solid hsla(246, 25%, 77%, 0.5);
+}
+
+.form-container button {
+  color: white;
+  font-weight: 500;
+  letter-spacing: 2px;
+  background-color: hsl(154, 59%, 51%);
+  border: none;
+}
+
+.tos {
+  font-size: 0.7rem;
+
+  color: hsl(246, 25%, 77%);
+  text-align: center;
+  line-height: 1.2rem;
+}
+
+.tos > span > span {
+  color: red;
+  font-weight: 700;
+}
