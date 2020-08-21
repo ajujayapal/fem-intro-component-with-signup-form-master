@@ -4,6 +4,28 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.green-button {
+  color: white;
+  font-weight: 500;
+  letter-spacing: 2px;
+  background-color: hsl(154, 59%, 51%);
+  border: none;
+  cursor: pointer;
+
+  outline: none;
+  padding: 18px 10px;
+  border-radius: 4px;
+}
+
+.green-button:hover {
+  background-color: hsla(154, 59%, 51%, 0.5);
+}
+
 html {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -38,7 +60,7 @@ body {
   font-size: 0.9rem;
 }
 
-#column-2 p {
+#column-2 p.trial-message {
   font-weight: 400;
   text-align: center;
   background-color: hsl(248, 32%, 49%);
@@ -51,42 +73,129 @@ body {
 }
 
 .form-container {
+  position: relative;
   background-color: white;
   padding: 20px;
   border-radius: 10px;
+  z-index: 2;
+}
+
+#terms {
+  position: absolute;
+  height: 0;
+  width: 100%;
+  /* padding: 20px; */
+  background-color: whitesmoke;
+  transform: translate(-20px, -95%);
+  color: black;
+  overflow-y: scroll;
 }
 
 .field input,
 .form-container button {
   width: 100%;
-  padding: 18px 10px;
-  margin-bottom: 15px;
-  border-radius: 4px;
+}
+
+.field {
+  position: relative;
+  margin-bottom: 10px;
 }
 
 .field input {
   border: 1px solid hsla(246, 25%, 77%, 0.5);
+  padding: 18px 10px;
+  border-radius: 4px;
 }
 
-.form-container button {
+.error-icon {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  display: none;
+}
+
+.error-icon::after {
+  content: url("../images/icon-error.svg");
+}
+
+.error-message {
+  display: none;
+  font-size: 0.6rem;
+  color: hsl(0, 100%, 74%);
+  margin: 0;
+  text-align: right;
+  padding-bottom: 10px;
+}
+
+/* #btn-trial {
   color: white;
   font-weight: 500;
   letter-spacing: 2px;
   background-color: hsl(154, 59%, 51%);
   border: none;
+  cursor: pointer;
 }
+
+#btn-trial:hover {
+  background-color: hsla(154, 59%, 51%, 0.5);
+} */
 
 .tos {
   font-size: 0.7rem;
-
   color: hsl(246, 25%, 77%);
   text-align: center;
   line-height: 1.2rem;
 }
 
 .tos > span > span {
-  color: red;
+  color: hsl(0, 100%, 74%);
   font-weight: 700;
+  cursor: pointer;
+}
+
+.quake {
+  animation-name: quake;
+  animation-duration: 0.1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 5;
+}
+
+.slide {
+  animation-name: slideUp;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+  padding: 20px;
+}
+
+@keyframes quake {
+  0% {
+    transform: translateX(-5px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    height: 0%;
+  }
+  25% {
+    height: 25%;
+  }
+  50% {
+    height: 50%;
+  }
+  75% {
+    height: 75%;
+  }
+  100% {
+    height: 100%;
+  }
 }
 
 @media screen and (min-width: 600px) {

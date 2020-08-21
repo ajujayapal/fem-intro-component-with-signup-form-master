@@ -43,7 +43,9 @@
           </p>
         </div>
         <div id="column-2" class="column">
-          <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+          <p class="trial-message">
+            <span>Try it free 7 days</span> then $20/mo. thereafter
+          </p>
           <div class="form-container">
             <form action="#">
               <div class="field">
@@ -51,37 +53,71 @@
                   type="text"
                   aria-label="First Name"
                   placeholder="First Name"
+                  id="first-name"
                 />
+                <span class="error-icon"></span>
+                <div class="error-message">First Name cannot be empty</div>
               </div>
               <div class="field">
                 <input
                   type="text"
                   aria-label="Last Name"
                   placeholder="Last Name"
+                  id="last-name"
                 />
+                <span class="error-icon"></span>
+                <div class="error-message">Last Name cannot be empty</div>
               </div>
               <div class="field">
                 <input
                   type="email"
                   aria-label="Email Address"
                   placeholder="Email Address"
+                  id="email"
                 />
+                <span class="error-icon"></span>
+                <div class="error-message">Looks like this is not an email</div>
               </div>
               <div class="field">
                 <input
                   type="password"
                   aria-label="Password"
                   placeholder="Password"
+                  id="password"
                 />
+                <span class="error-icon"></span>
+                <div class="error-message">Password cannot be empty</div>
               </div>
 
-              <button>CLAIM YOUR FREE TRIAL</button>
+              <button id="btn-trial" class="green-button">
+                CLAIM YOUR FREE TRIAL
+              </button>
             </form>
             <div class="tos">
               <span>
                 By clicking the button, you are agreeing to our
                 <span> Terms and Services</span>
               </span>
+            </div>
+            <div id="terms">
+              <h4>Terms of Service</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipiscing elit feugiat,
+                enim magnis volutpat praesent nec montes dignissim. Fusce morbi
+                lacus auctor turpis vestibulum aliquam per, taciti ante tortor
+                habitasse magnis nisl, felis sociis ornare placerat ridiculus
+                accumsan. Taciti ridiculus parturient blandit quisque vel massa
+                ligula ac fermentum, nunc nisl condimentum nullam nec lacus
+                etiam cursus, neque sociosqu faucibus dapibus egestas urna sem
+                per.
+              </p>
+              <p style="padding-bottom: 20px;">
+                Curae integer facilisis praesent sociosqu curabitur parturient
+                etiam dictum, maecenas varius sed id risus senectus luctus
+                volutpat neque, cras rutrum urna venenatis nascetur facilisi
+                mus.
+              </p>
+              <a href="#" class="back-link green-button">&lt;&lt;Back</a>
             </div>
           </div>
         </div>
@@ -97,5 +133,6 @@
         <a href="https://jayapalan.com" target="_blank">Aju Jayapalan</a>.
       </p>
     </footer> -->
+    <script src="./js/script.js"></script>
   </body>
 </html>
