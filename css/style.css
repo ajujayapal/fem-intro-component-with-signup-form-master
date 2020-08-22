@@ -9,23 +9,6 @@ a {
   color: black;
 }
 
-.green-button {
-  color: white;
-  font-weight: 500;
-  letter-spacing: 2px;
-  background-color: hsl(154, 59%, 51%);
-  border: none;
-  cursor: pointer;
-
-  outline: none;
-  padding: 18px 10px;
-  border-radius: 4px;
-}
-
-.green-button:hover {
-  background-color: hsla(154, 59%, 51%, 0.5);
-}
-
 html {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -44,6 +27,23 @@ body {
   width: 100vw;
   min-height: 100vh;
   overflow-x: hidden;
+}
+
+.green-button {
+  color: white;
+  font-weight: 500;
+  letter-spacing: 2px;
+  background-color: hsl(154, 59%, 51%);
+  border: none;
+  cursor: pointer;
+
+  outline: none;
+  padding: 18px 10px;
+  border-radius: 4px;
+}
+
+.green-button:hover {
+  background-color: hsla(154, 59%, 51%, 0.5);
 }
 
 #wrapper {
@@ -91,7 +91,6 @@ p.trial-message.success {
   position: absolute;
   height: 0;
   width: 100%;
-  /* padding: 20px; */
   background-color: whitesmoke;
   transform: translate(-20px, -95%);
   color: black;
@@ -133,19 +132,6 @@ p.trial-message.success {
   text-align: right;
   padding-bottom: 10px;
 }
-
-/* #btn-trial {
-  color: white;
-  font-weight: 500;
-  letter-spacing: 2px;
-  background-color: hsl(154, 59%, 51%);
-  border: none;
-  cursor: pointer;
-}
-
-#btn-trial:hover {
-  background-color: hsla(154, 59%, 51%, 0.5);
-} */
 
 .tos {
   font-size: 0.7rem;
@@ -223,6 +209,10 @@ p.trial-message.success {
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  #column-1 h2 {
+    font-size: 2.4rem;
   }
 
   #column-2 {
