@@ -60,7 +60,8 @@ body {
   font-size: 0.9rem;
 }
 
-#column-2 p.trial-message {
+p.trial-message {
+  font-size: 0.8rem;
   font-weight: 400;
   text-align: center;
   background-color: hsl(248, 32%, 49%);
@@ -68,8 +69,13 @@ body {
   border-radius: 10px;
 }
 
-#column-2 p span {
+p.trial-message span:first-child {
   font-weight: 700;
+}
+
+p.trial-message.success {
+  background-color: hsl(154, 59%, 51%);
+  display: none;
 }
 
 .form-container {
@@ -204,20 +210,27 @@ body {
   }
 
   #wrapper {
-    padding: 50px 50px;
+    padding: 0 15vw;
   }
 
   #column-1 {
     width: 50%;
+    min-height: 100vh;
     float: left;
     text-align: left;
+
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
   }
 
   #column-2 {
     width: 50%;
+    min-height: 100vh;
     float: right;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }

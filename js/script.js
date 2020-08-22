@@ -5,6 +5,8 @@ const tosLink = document.querySelector(".tos > span > span");
 const terms = document.querySelector("#terms");
 const backButton = document.querySelector(".back-link");
 const trialMessage = document.querySelector(".trial-message");
+const trialMessageSuccess = document.querySelector(".trial-message.success");
+const myForm = document.querySelector("#my-form");
 
 backButton.addEventListener("click", () => terms.classList.remove("slide"));
 
@@ -55,13 +57,15 @@ function handleclick(e) {
 }
 
 function showError(eleTextField) {
-  eleTextField.placeholder = "";
   eleTextField.parentElement.querySelector(".error-message").style.display =
     "block";
   eleTextField.parentElement.querySelector(".error-icon").style.display =
     "block";
   getErrorMessageElement(eleTextField).classList.add("quake");
   getErrorIconElement(eleTextField).classList.add("quake");
+
+  trialMessageSuccess.style.display = "none";
+  trialMessage.style.display = "block";
 }
 
 function hideError(eleTextField) {
@@ -71,6 +75,9 @@ function hideError(eleTextField) {
     "none";
   getErrorMessageElement(eleTextField).classList.remove("quake");
   getErrorIconElement(eleTextField).classList.remove("quake");
+
+  trialMessageSuccess.style.display = "none";
+  trialMessage.style.display = "block";
 }
 
 function getErrorMessageElement(eleTextField) {
@@ -92,12 +99,12 @@ function isValidEmail() {
 
 function clear() {
   for (let i = 0; i < textFields.length; i++) {
-    textFields[i].value = "";
+    textFields[i].value = textFields[i].defaultValue;
   }
 }
 
 function successful() {
-  clear();
-  trialMessage.innerHTML = "Thank you!";
-  trialMessage.style.backgroundColor = "hsl(154, 59%, 51%)";
+  myForm.reset();
+  trialMessageSuccess.style.display = "block";
+  trialMessage.style.display = "none";
 }
